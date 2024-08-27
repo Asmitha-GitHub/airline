@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trains - My Airline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Airline</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-plane"></i> Flights</a></li>
+                <li><a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a></li>
+                <li><a href="trains.html"><i class="fas fa-train"></i> Trains</a></li>
+                <li><a href="buses.html"><i class="fas fa-bus"></i> Buses</a></li>
+            </ul>
+        </nav>
+        <div class="user-options">
+            <a href="#">Offers</a>
+            <a href="#">Customer Service</a>
+            <a href="#">Log in/Sign up</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Search and Book Trains</h1>
+        <p>Find the best train routes and book your tickets easily.</p>
+
+        <form action="/search_trains" method="get">
+            <label for="departure">Departure Station:</label>
+            <input type="text" id="departure" name="departure" placeholder="Enter departure station" required>
+
+            <label for="arrival">Arrival Station:</label>
+            <input type="text" id="arrival" name="arrival" placeholder="Enter arrival station" required>
+
+            <label for="departure_date">Departure Date:</label>
+            <input type="date" id="departure_date" name="departure_date" required>
+
+            <label for="passengers">Passengers:</label>
+            <input type="number" id="passengers" name="passengers" min="1" max="10" value="1" required>
+
+            <button type="submit">Search Trains</button>
+        </form>
+
+        <section class="special-offers">
+            <h2>Special Train Offers</h2>
+            <div class="offer">
+                <img src="images/train_offer1.jpg" alt="Train Offer 1">
+                <p>Book early and save 15% on your train journey!</p>
+            </div>
+            <div class="offer">
+                <img src="images/train_offer2.jpg" alt="Train Offer 2">
+                <p>Enjoy discounted rates on weekend travels.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Airline Booking System</p>
+    </footer>
+</body>
+</html>
