@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buses - My Airline</title>
+    <title>Trains - My Airline</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,15 +30,15 @@
     </header>
 
     <main>
-        <h1>Book Bus Tickets</h1>
-        <p>Find and book bus tickets for your travels.</p>
+        <h1>Book Train Tickets</h1>
+        <p>Discover and book train tickets for your next journey.</p>
 
-        <form action="/search_buses" method="get">
-            <label for="departure_city">Departure City:</label>
-            <input type="text" id="departure_city" name="departure_city" placeholder="Enter departure city" required>
+        <form action="/search_trains" method="get">
+            <label for="departure_station">Departure Station:</label>
+            <input type="text" id="departure_station" name="departure_station" placeholder="Enter departure station" required>
 
-            <label for="arrival_city">Arrival City:</label>
-            <input type="text" id="arrival_city" name="arrival_city" placeholder="Enter arrival city" required>
+            <label for="arrival_station">Arrival Station:</label>
+            <input type="text" id="arrival_station" name="arrival_station" placeholder="Enter arrival station" required>
 
             <label for="departure_date">Departure Date:</label>
             <input type="date" id="departure_date" name="departure_date" required>
@@ -49,7 +49,7 @@
             <label for="passengers">Passengers:</label>
             <input type="number" id="passengers" name="passengers" min="1" max="10" value="1" required>
 
-            <button type="submit">Search Buses</button>
+            <button type="submit">Search Trains</button>
         </form>
     </main>
 
