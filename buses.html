@@ -8,53 +8,49 @@
 </head>
 <body>
     <header>
-        <div class="logo">My Airline</div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fas fa-plane"></i> Flights</a></li>
-                <li><a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a></li>
-                <li><a href="trains.html"><i class="fas fa-train"></i> Trains</a></li>
-                <li><a href="buses.html"><i class="fas fa-bus"></i> Buses</a></li>
-            </ul>
-        </nav>
-        <div class="user-options">
-            <a href="#">Offers</a>
-            <a href="#">Customer Service</a>
-            <a href="#">Log in/Sign up</a>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="My Airline Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="flights.html"><i class="fas fa-plane"></i> Flights</a></li>
+                    <li><a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a></li>
+                    <li><a href="trains.html"><i class="fas fa-train"></i> Trains</a></li>
+                    <li><a href="buses.html"><i class="fas fa-bus"></i> Buses</a></li>
+                </ul>
+            </nav>
+            <div class="user-options">
+                <a href="#">Offers</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Log in/Sign up</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <h1>Book Your Bus Tickets</h1>
-        <p>Find and book bus tickets to your destination.</p>
+        <h1>Book Bus Tickets</h1>
+        <p>Find and book bus tickets for your travels.</p>
 
         <form action="/search_buses" method="get">
-            <label for="departure">Departure City:</label>
-            <input type="text" id="departure" name="departure" placeholder="Enter departure city" required>
+            <label for="departure_city">Departure City:</label>
+            <input type="text" id="departure_city" name="departure_city" placeholder="Enter departure city" required>
 
-            <label for="arrival">Arrival City:</label>
-            <input type="text" id="arrival" name="arrival" placeholder="Enter arrival city" required>
+            <label for="arrival_city">Arrival City:</label>
+            <input type="text" id="arrival_city" name="arrival_city" placeholder="Enter arrival city" required>
 
             <label for="departure_date">Departure Date:</label>
             <input type="date" id="departure_date" name="departure_date" required>
+
+            <label for="return_date">Return Date:</label>
+            <input type="date" id="return_date" name="return_date">
 
             <label for="passengers">Passengers:</label>
             <input type="number" id="passengers" name="passengers" min="1" max="10" value="1" required>
 
             <button type="submit">Search Buses</button>
         </form>
-
-        <section class="special-offers">
-            <h2>Bus Ticket Offers</h2>
-            <div class="offer">
-                <img src="images/bus_offer1.jpg" alt="Bus Offer 1">
-                <p>Get 10% off on round-trip bus tickets!</p>
-            </div>
-            <div class="offer">
-                <img src="images/bus_offer2.jpg" alt="Bus Offer 2">
-                <p>Discounted fares on overnight buses.</p>
-            </div>
-        </section>
     </main>
 
     <footer>
@@ -62,3 +58,4 @@
     </footer>
 </body>
 </html>
+
