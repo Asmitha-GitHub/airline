@@ -8,25 +8,49 @@
 </head>
 <body>
     <header>
-        <div class="logo">My Airline</div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fas fa-plane"></i> Flights</a></li>
-                <li><a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a></li>
-                <li><a href="trains.html"><i class="fas fa-train"></i> Trains</a></li>
-                <li><a href="buses.html"><i class="fas fa-bus"></i> Buses</a></li>
-            </ul>
-        </nav>
-        <div class="user-options">
-            <a href="#">Offers</a>
-            <a href="#">Customer Service</a>
-            <a href="#">Log in/Sign up</a>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="My Airline Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="flights.html"><i class="fas fa-plane"></i> Flights</a></li>
+                    <li><a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a></li>
+                    <li><a href="trains.html"><i class="fas fa-train"></i> Trains</a></li>
+                    <li><a href="buses.html"><i class="fas fa-bus"></i> Buses</a></li>
+                </ul>
+            </nav>
+            <div class="user-options">
+                <a href="#">Offers</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Log in/Sign up</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <h1>Find Flights</h1>
-        <p>Search for available flights using our search tool.</p>
+        <h1>Book Your Flight</h1>
+        <p>Find the best flights for your next adventure.</p>
+
+        <form action="/search_flights" method="get">
+            <label for="departure">Departure City:</label>
+            <input type="text" id="departure" name="departure" placeholder="Enter departure city" required>
+
+            <label for="arrival">Arrival City:</label>
+            <input type="text" id="arrival" name="arrival" placeholder="Enter arrival city" required>
+
+            <label for="departure_date">Departure Date:</label>
+            <input type="date" id="departure_date" name="departure_date" required>
+
+            <label for="return_date">Return Date:</label>
+            <input type="date" id="return_date" name="return_date">
+
+            <label for="passengers">Passengers:</label>
+            <input type="number" id="passengers" name="passengers" min="1" max="10" value="1" required>
+
+            <button type="submit">Search Flights</button>
+        </form>
     </main>
 
     <footer>
@@ -34,3 +58,5 @@
     </footer>
 </body>
 </html>
+
+
