@@ -8,53 +8,49 @@
 </head>
 <body>
     <header>
-        <div class="logo">My Airline</div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fas fa-plane"></i> Flights</a></li>
-                <li><a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a></li>
-                <li><a href="trains.html"><i class="fas fa-train"></i> Trains</a></li>
-                <li><a href="buses.html"><i class="fas fa-bus"></i> Buses</a></li>
-            </ul>
-        </nav>
-        <div class="user-options">
-            <a href="#">Offers</a>
-            <a href="#">Customer Service</a>
-            <a href="#">Log in/Sign up</a>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="My Airline Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="flights.html"><i class="fas fa-plane"></i> Flights</a></li>
+                    <li><a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a></li>
+                    <li><a href="trains.html"><i class="fas fa-train"></i> Trains</a></li>
+                    <li><a href="buses.html"><i class="fas fa-bus"></i> Buses</a></li>
+                </ul>
+            </nav>
+            <div class="user-options">
+                <a href="#">Offers</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Log in/Sign up</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <h1>Search and Book Trains</h1>
-        <p>Find the best train routes and book your tickets easily.</p>
+        <h1>Book Train Tickets</h1>
+        <p>Discover and book train tickets for your next journey.</p>
 
         <form action="/search_trains" method="get">
-            <label for="departure">Departure Station:</label>
-            <input type="text" id="departure" name="departure" placeholder="Enter departure station" required>
+            <label for="departure_station">Departure Station:</label>
+            <input type="text" id="departure_station" name="departure_station" placeholder="Enter departure station" required>
 
-            <label for="arrival">Arrival Station:</label>
-            <input type="text" id="arrival" name="arrival" placeholder="Enter arrival station" required>
+            <label for="arrival_station">Arrival Station:</label>
+            <input type="text" id="arrival_station" name="arrival_station" placeholder="Enter arrival station" required>
 
             <label for="departure_date">Departure Date:</label>
             <input type="date" id="departure_date" name="departure_date" required>
+
+            <label for="return_date">Return Date:</label>
+            <input type="date" id="return_date" name="return_date">
 
             <label for="passengers">Passengers:</label>
             <input type="number" id="passengers" name="passengers" min="1" max="10" value="1" required>
 
             <button type="submit">Search Trains</button>
         </form>
-
-        <section class="special-offers">
-            <h2>Special Train Offers</h2>
-            <div class="offer">
-                <img src="images/train_offer1.jpg" alt="Train Offer 1">
-                <p>Book early and save 15% on your train journey!</p>
-            </div>
-            <div class="offer">
-                <img src="images/train_offer2.jpg" alt="Train Offer 2">
-                <p>Enjoy discounted rates on weekend travels.</p>
-            </div>
-        </section>
     </main>
 
     <footer>
@@ -62,3 +58,4 @@
     </footer>
 </body>
 </html>
+
