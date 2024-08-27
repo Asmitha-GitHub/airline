@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airline Booking System</title>
+    <title>Home - My Airline</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">My Airline</div>
+        <div class="logo">
+            <img src="images/logo.png" alt="My Airline Logo">
+        </div>
         <nav>
             <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="flights.html"><i class="fas fa-plane"></i> Flights</a></li>
                 <li><a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a></li>
                 <li><a href="trains.html"><i class="fas fa-train"></i> Trains</a></li>
@@ -26,26 +28,15 @@
     </header>
 
     <main>
-        <section class="search-bar">
-            <form id="flight-search">
-                <div class="trip-type">
-                    <button type="button">One Way</button>
-                    <button type="button">Round Trip</button>
-                </div>
-                <input type="text" placeholder="From">
-                <input type="text" placeholder="To">
-                <input type="date">
-                <input type="date" placeholder="Return">
-                <input type="text" placeholder="1 Traveller, Economy">
-                <button type="submit">Search</button>
-            </form>
-        </section>
+        <div class="welcome-message">
+            <h1>Welcome to My Airline! ✈️</h1>
+            <p>Your journey begins here. Explore flights, hotels, trains, and buses to make your travel plans seamless and enjoyable.</p>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Airline Booking System</p>
+        <p>&copy; 2024 My Airline Booking System</p>
     </footer>
 </body>
 </html>
-
 
