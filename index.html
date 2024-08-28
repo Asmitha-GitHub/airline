@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Airline</title>
+    <title>Airline Booking System</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Hero Image Styles */
@@ -146,76 +146,20 @@
     </header>
 
     <main>
-        <div class="welcome-message">
-            <h1 style="font-size: 48px; font-weight: bold; font-style: italic;">
-                Welcome to Our Airlines!!! ✈️
-            </h1>
-            <p style="font-size: 24px; font-weight: bold;">
-                Your journey begins here. Explore flights, hotels, trains, and buses to make your travel plans seamless and enjoyable.
-            </p>
-        </div>
-
-        <!-- Call-to-Action Buttons -->
-        <div class="cta-buttons">
-            <a href="flights.html">Book a Flight</a>
-            <a href="#">Check Offers</a>
-        </div>
-
-        <!-- Testimonials Section -->
-        <!-- Testimonials Section -->
-         <!-- Testimonials Section -->
-<!-- Testimonials Section -->
-<!-- Testimonials Section -->
-<!-- Testimonials Section -->
-<div class="testimonials" style="
-    background: linear-gradient(145deg, #333333, #666666); /* Dark grey gradient background */
-    color: white;
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    transform: perspective(1000px) rotateX(3deg); /* 3D tilt */
-">
-    <h2 style="
-        font-weight: bold;
-        color: white;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
-    ">What Our Customers Say</h2>
-    <div class="testimonial">
-        <p style="
-            font-weight: bold;
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
-        "> "The best travel experience ever! Highly recommend this airline."</p>
-        <p style="
-            font-weight: bold;
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
-        "> - Alex Johnson</p>
-    </div>
-    <div class="testimonial">
-        <p style="
-            font-weight: bold;
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
-        "> "Exceptional service and comfort. Will definitely fly again."</p>
-        <p style="
-            font-weight: bold;
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
-        "> - Emily Davis</p>
-    </div>
-</div>
-  <div class="news">
-            <h2>Latest News & Updates</h2>
-            <div class="news-item">
-                <h3>Exciting New Destinations Added!!!</h3>
-                <p>We are pleased to announce new destinations to our flight routes...</p>
-            </div>
-            <div class="news-item">
-                <h3>Special Offers This Month</h3>
-                <p>Don't miss out on our exclusive offers available for this month...</p>
-            </div>
-        </div>
+        <section class="search-bar">
+            <form id="flight-search">
+                <div class="trip-type">
+                    <button type="button">One Way</button>
+                    <button type="button">Round Trip</button>
+                </div>
+                <input type="text" placeholder="From">
+                <input type="text" placeholder="To">
+                <input type="date">
+                <input type="date" placeholder="Return">
+                <input type="text" placeholder="1 Traveller, Economy">
+                <button type="submit">Search</button>
+            </form>
+        </section>
     </main>
 
     <footer style="font-size: 0.8em; padding: 10px; text-align: center;">
