@@ -5,6 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - My Airline</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Hero Image Styles */
+        .hero {
+            background: url('images/hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Call-to-Action Buttons Styles */
+        .cta-buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta-buttons a {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 5px;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .cta-buttons a:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Testimonials Styles */
+        .testimonials {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .testimonial {
+            margin: 10px;
+            font-style: italic;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 0.6s forwards;
+        }
+        .testimonial:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        .testimonial:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* News Section Styles */
+        .news {
+            padding: 20px;
+        }
+        .news-item {
+            margin-bottom: 15px;
+            opacity: 0;
+            transform: translateX(-100px);
+            animation: slideInRight 0.6s forwards;
+        }
+        .news-item:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        .news-item:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -33,17 +149,85 @@
         <div class="welcome-message">
             <h1 style="font-size: 48px; font-weight: bold; font-style: italic;">
                 Welcome to Our Airlines!!! ✈️
-              </h1>
-              
+            </h1>
             <p style="font-size: 24px; font-weight: bold;">
                 Your journey begins here. Explore flights, hotels, trains, and buses to make your travel plans seamless and enjoyable.
-              </p>
-              
+            </p>
+        </div>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="cta-buttons">
+            <a href="flights.html">Book a Flight</a>
+            <a href="#">Check Offers</a>
+        </div>
+
+        <!-- Testimonials Section -->
+        <!-- Testimonials Section -->
+         <!-- Testimonials Section -->
+<!-- Testimonials Section -->
+<!-- Testimonials Section -->
+<!-- Testimonials Section -->
+<div class="testimonials" style="
+    background: linear-gradient(145deg, #333333, #666666); /* Dark grey gradient background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transform: perspective(1000px) rotateX(3deg); /* 3D tilt */
+">
+    <h2 style="
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
+    ">What Our Customers Say</h2>
+    <div class="testimonial">
+        <p style="
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
+        "> "The best travel experience ever! Highly recommend this airline."</p>
+        <p style="
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
+        "> - Alex Johnson</p>
+    </div>
+    <div class="testimonial">
+        <p style="
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
+        "> "Exceptional service and comfort. Will definitely fly again."</p>
+        <p style="
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow */
+        "> - Emily Davis</p>
+    </div>
+</div>
+  <div class="news">
+            <h2>Latest News & Updates</h2>
+            <div class="news-item">
+                <h3>Exciting New Destinations Added!!!</h3>
+                <p>We are pleased to announce new destinations to our flight routes...</p>
+            </div>
+            <div class="news-item">
+                <h3>Special Offers This Month</h3>
+                <p>Don't miss out on our exclusive offers available for this month...</p>
+            </div>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 My Airline Booking System</p>
+    <footer style="font-size: 0.8em; padding: 10px; text-align: center;">
+        <p style="margin: 5px 0;">
+            &copy;  My Airline Booking System
+        </p>
+        <p style="margin: 5px 0;">
+            <a href="#" style="font-size: 0.8em; margin: 0 5px;">Privacy Policy</a> | 
+            <a href="#" style="font-size: 0.8em; margin: 0 5px;">Terms of Service</a> | 
+            <a href="#" style="font-size: 0.8em; margin: 0 5px;">Contact Us</a>
+        </p>
     </footer>
+    
 </body>
 </html>
